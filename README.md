@@ -12,7 +12,6 @@
 
 **Presentation (Greek):** [http://paperreview.nfshost.com/files/paperreview_presentation_greek.pdf](http://paperreview.nfshost.com/files/paperreview_presentation_greek.pdf)
 
-
 This is my dissertation project for the BSc(Hons) in Informatics Engineering at the Department of Information Technology, Thessaloniki, Greece.
 
 A Web application for the review and administration of the submission process of conference papers.
@@ -23,22 +22,37 @@ The application specializes in importing papers, their review by an assigned com
 
 The system also includes an action log where all users actions are recorded.
 
-For more information and credentials for a testing account, please read the [abstract](http://paperreview.nfshost.com/files/paperreview_abstract_english.pdf).
+###Demo Credentials
+**Demo conference:** *Gigabyteme conference*
 
-**Note: All the project documents are written in Greek, except for the Abstract.**
+Administrator:
+  - **username: -
+  - **password: -
+
+Chairman:
+  - **username:** *james.doe@doe.com*
+  - **password:** *qwaszx*
+
+Reviewer:
+  - **username:** *daniel.rand@marvel.com*
+  - **password:** *qwaszx*
+
+Author:
+  - **username:** *darwin.cooke@writers.com*
+  - **password:** *qwaszx*
 
 ### Technologies and tools used:
 
-* PHP
-* SQL
-* MySQL
-* XHTML
-* CSS
-* JavaScript
-* AJAX
-* prototype
-* UML
-* Adobe Photoshop
+- PHP
+- SQL
+- MySQL
+- XHTML
+- CSS
+- JavaScript
+- AJAX
+- prototype
+- UML
+- Adobe Photoshop
 
 ### Created: Late 2007
 
