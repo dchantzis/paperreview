@@ -1,0 +1,84 @@
+@charset "iso-8859-1";
+/* CSS Document */
+/*
+###########################################################################
+Navigation Cascading Style Sheet
+This css contains all the styling regarding the navigation of ulounge.php
+###########################################################################
+*/
+	
+/*usertype navigation*/
+#navigation ul{
+	list-style-type: none;
+}
+		
+#navi ul{
+	display:none;
+}		
+	
+#navigation {
+	margin: 0px;
+	margin-top: 20px;
+	margin-left: 0px;
+	padding: 0px;
+	float: left;
+	width: 115px; /* 120px; */
+}		
+	
+#navigation li a {
+	display: block;
+	color: #616161;
+	text-decoration: none;
+	/* _height: 1em; */
+	line-height: 20px; /*vertical alignment of embedded text*/
+	height: 20px;
+	margin-top: 10px;
+	outline: none; 
+	overflow: hidden;
+}	
+
+#navigation #parent_node_admin a, 
+#navigation #parent_node_ch a, 
+#navigation #parent_node_rev a, 
+#navigation #parent_node_auth a
+{
+	margin-left: 10px;
+}
+	
+#navigation li a:focus, 
+#navigation li a:hover, 
+#navigation li a:active {
+	color: #EC0006;	
+	outline: none; 
+	overflow: hidden;
+}
+	
+/*usertype subnavigation*/
+#navigation #parent_node_admin .subnavi li a, 
+#navigation #parent_node_ch .subnavi li a, 
+#navigation #parent_node_rev .subnavi li a, 
+#navigation #parent_node_auth .subnavi li a
+{
+	display: inline;
+	margin-left: 20px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 90%;
+	outline: none; 
+	overflow: hidden;
+}
+
+#navigation .subnavi li a:focus, 
+#navigation .subnavi li a:hover, 
+#navigation .subnavi li a:active {
+	color: #FFFFFF;
+	background: #FF0000;
+	outline: none; 
+	overflow: hidden;
+}
+
+.navi_tree li.submenu{ /* Style for LI that contains sub lists (other ULs). */
+	background: white url(../images/navigation/plus.gif) no-repeat left 1px;
+	background-position: 0 5px;
+	/* cursor: hand !important; */
+	cursor: pointer !important;
+}

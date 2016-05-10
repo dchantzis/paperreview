@@ -1,0 +1,455 @@
+@charset "iso-8859-1";
+/* CSS Document */
+/*
+###########################################################################
+Forms Cascading Style Sheet
+This css contains all the styling regarding forms
+###########################################################################
+*/
+
+/* fieldset for all the pages */
+form {
+	background-color: #f0f4f6;
+    background-image: url(../images/layout/form-background.gif);
+    background-repeat: repeat-x;
+    background-position: 0 0;
+}
+
+.user_registration form,
+.update_user_profile form {
+	background-color: #FFFFFF;
+}
+	
+fieldset {
+	border-width: 0;
+	margin: 0 0 0 10px;		
+	padding: 0;
+}
+	
+.login fieldset
+{
+	width: 480px;
+}
+	
+legend  {
+	color: #204050;
+	font: normal bold 115% "lucida sans", serif;
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+	
+fieldset .field  {
+	border-top: 1px dashed #d0d4d6;
+	clear: both;
+	padding: 6px 0;
+}
+
+.file_formats fieldset .field {
+	width: 300px;
+}
+	
+fieldset .field label {
+	color: #204050;
+	display: block;
+	float: left;
+	margin-right: 5px;
+	width: 150px;
+	cursor: pointer;
+}
+
+#userSearchForm
+{
+	color: #204050;
+	display: block;
+	float: left;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.file_formats fieldset .field label {
+	color: #204050;
+	font-size: 90%;
+	display: block;
+	float: left;
+	margin-right: 0px;
+	width: 125px;
+	cursor: pointer;
+}
+
+
+.user_info fieldset .field label
+.announcements .field label,
+.administrator_announcements .field label
+{
+	color: #204050;
+	display: block;
+	float: left;
+	margin-right: 5px;
+	width: 180px;
+	cursor: default;
+}
+
+.conference_info fieldset .field label,
+.update_conference .field label,
+.conferences .field label
+{
+	color: #204050;
+	display: block;
+	float: left;
+	margin-right: 5px;
+	width: 230px;
+	cursor: default;
+}
+
+.announcements .field label,
+.administrator_announcements .field label
+{
+	width: 200px;
+}
+
+.conference_control_panel fieldset .field label,
+.chairman_conference_control_panel fieldset .field label {
+	color: #204050;
+	display: block;
+	float: right;
+	margin-left: 5px;
+	width: 430px;
+	cursor: pointer;
+}
+	
+fieldset .required,
+.required {
+	color: #ff0000;
+}
+	
+fieldset .field input {
+	max-width: 150px;
+}
+
+.display_users #search_lname,
+.user_info #search_lname 
+{
+	width: 150px;
+}
+	
+.login_choose_conference fieldset .field select {
+	max-width: 350px;
+}
+	
+.ulounge select {
+	max-width: 500px;
+}
+
+fieldset .field textarea {
+	margin-top: 5px;
+	width: 230px;
+	height: 100px;
+}
+
+fieldset .field textarea.medium_text
+{
+	margin-top: 5px;
+	width: 350px;
+	height: 100px;
+}
+
+fieldset .field textarea.bigger_text
+{
+	margin-top: 5px;
+	width: 350px;
+	height: 200px;
+}
+
+.conferences #date_conference_held,
+.update_conference #date_conference_held
+{
+	margin-top: 5px;
+	width: 230px;
+	height: 50px;
+}
+
+fieldset .notes {
+	color: #809098;
+	font-size: 95%;
+	margin: 2px 0 0 120px;
+	font-style: italic;
+}
+
+.reviews fieldset .notes
+{
+	color: #809098;
+	font-size: 95%;
+	margin: 2px 0 0 100px;
+	font-style: italic;
+}
+
+.reviews .field label
+{
+	width: 100px;
+}
+
+.update_conference fieldset .notes,
+.conferences fieldset .notes
+{
+	clear: both;
+	color: #809098;
+	font-size: 95%;
+	margin: 2px 0 0 230px;
+	font-style: italic;
+}
+
+.papers fieldset .notes
+{
+	clear: both;
+	color: #809098;
+	font-size: 95%;
+	margin: 2px 0 0 155px;
+	font-style: italic;
+}
+
+.paper_body fieldset .notes
+{
+	clear: both;
+	color: #809098;
+	font-size: 95%;
+	margin: 2px 0 0 155px;
+	font-style: italic;
+}
+
+.announcements fieldset .notes,
+.administrator_announcements fieldset .notes
+{
+	clear: both;
+	color: #809098;
+	font-size: 95%;
+	margin: 2px 0 0 200px;
+	font-style: italic;
+}
+
+.messages
+{
+	color: #FF0000;
+	font-size: 120%;
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.papers .messages,
+.file_formats .messages
+{
+	font-size: 130%;
+	font-weight: normal;
+}
+
+.force_interest_levels .messages,
+.conflicts .messages,
+.assign_reviewersf .messages,
+.set_interest_levelsf .messages,
+.view_assignments .messages,
+.accept_papers .messages,
+.assigned_papers .messages,
+.set_interest_levels .messages
+{
+	color: #FF0000;
+	font-size: 120%;
+	font-style: italic;
+	text-align: center;
+}
+
+
+input, textarea, select {
+	font: 11px Georgia, "Times New Roman", Times, serif;
+}
+	
+.ulounge input, textarea, select {
+	font: 10px Georgia, "Times New Roman", Times, serif;
+}
+	
+input.text, textarea, select {
+	background:#f8f8f8 url(../images/layout/input-background.gif) repeat-x top left;
+	border: 1px solid black;
+	border-color:#c0c4c6 #e0e4e6 #e0e4e6 #c0c4c6;
+	color: #808486;
+	padding:2px 0 2px 4px;
+}
+	
+input.text.highlight, textarea.highlight, select.highlight,
+input.text:focus, textarea:focus, select:focus
+{
+	background-color: #ffffff;
+	border-color: #a0b0b8;
+	color: #204050;
+}
+	
+.field {
+	font: 12px Georgia, "Times New Roman", Times, serif;
+}
+	
+.login #form,
+.login_choose_conference #form {
+	/*border: 1px solid #000000;*/
+}
+	
+.login .submit,
+.login_choose_conference .submit
+{
+	margin-left: 420px;
+}
+
+.file_formats .submit
+{
+	margin-left: 120px;
+}
+
+.user_registration .submit
+{
+	display: inline;
+	margin-left: 250px;
+	margin-top: 50px;
+}
+
+.accept_papers .submit
+{
+	display: inline;
+	margin-left: 300px;
+	margin-top: 50px;
+}
+
+.user_registration_complete .submit
+{
+	display: inline;
+	margin-left: 280px;
+	margin-top: 50px;
+}
+
+.change_password .submit
+{
+	display: inline;
+	margin-left: 450px;
+	margin-top: 50px;
+}
+
+.update_user_profile .submit,
+.conference_control_panel .submit,
+.chairman_conference_control_panel .submit,
+.update_conference .submit,
+.announcements .submit,
+.administrator_announcements .submit,
+.conferences .submit,
+.papers .submit,
+.paper_interest_level .submit,
+.assign_reviewers .submit,
+.paper_body .submit,
+.conflicts .submit,
+.reviews .submit
+{
+	display: inline;
+	margin-left: 210px;
+	margin-top: 50px;
+}
+
+.assign_reviewersf .submit,
+.set_interest_levelsf .submit
+{
+	display: inline;
+	margin-left: 230px;
+	margin-top: 50px;
+}
+
+.conferences select
+{
+	max-width: 520px;
+}
+
+.chairmen_assignments .submit,
+.reviewers_assignments .submit {
+	display: inline;
+	margin-left: 425px;
+	margin-top: 10px;
+}
+
+.conferences #searchform ul,
+.fileformats #searchform ul{
+	padding: 3px;
+	list-style-type: none;
+}
+
+.users_list #limitfrm {
+	display: block;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	text-align: right;
+	border: 1px dashed #d0d4d6;
+	padding: 5px;
+}
+
+.users_list #limitfrm #limitPerPage{
+	width: 100px;
+}
+
+#fconfform select,
+#sconfform select
+{
+	text-transform: capitalize;
+}
+
+#lastfrm
+{
+	margin: 20px;
+	clear: both;
+}
+
+#author_name_fields
+{
+	float: left;
+	width: 150px;
+}
+
+#author_name_fields div.field
+{
+	border:0px;
+}
+
+#author_name_fields .field label
+{
+	width: 80px;
+}
+
+#lastfrm ul.buttons
+{
+	list-style-type: none;
+	width: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 5px;
+	float: left;
+}
+
+#lastfrm ul.morebuttons
+{
+	list-style-type: none;
+	width: 50px;
+	padding: 5px;
+	float: right;
+}
+
+#lastfrm #add,
+#lastfrm #remove,
+#lastfrm #clear,
+#lastfrm #moveup,
+#lastfrm #movedown
+{
+	width: 50px;
+}
+
+#lastfrm #authorslist
+{
+	float: left;
+}
+
+fieldset .field #title
+{
+	max-width: 350px;
+}
+

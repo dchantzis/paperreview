@@ -1,0 +1,25 @@
+@charset "iso-8859-1";
+/* CSS Document */
+/*
+##################################################################
+NOTE: Each page, has in its body tag a class attribute with the name
+of that page without the file extensions. 
+i.e: login.php has <body class="login">.
+This is used to assign different settings to each page contents
+
+UPDATE: almost all the php pages are have a <body class="ulounge">
+and a div inside them with the name of the page.
+i.e.: display_announcements has <div class="display_announcements">.
+For those, and those only pages, the content outside that div is 
+identical. This is why they have <body class="ulounge">. 
+##################################################################
+*/
+@import url(./layout.inc.css);
+@import url(./useroptions.inc.css);	
+@import url(./navigation.inc.css);
+@import url(./forms.inc.css);
+@import url(./sliders.inc.css);
+
+	
+
+

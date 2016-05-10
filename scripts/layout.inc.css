@@ -1,0 +1,2549 @@
+@charset "iso-8859-1";
+/* CSS Document */
+/*
+###########################################################################
+Layout Cascading Style Sheet
+This css contains all the styling regarding the basic layout of each page
+###########################################################################
+*/
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+	
+/*body for all the pages */
+body {
+	background-color: #FFFFFF;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 70%;
+}
+	
+/* wrapper for ulounge.php */
+.ulounge #wrapper,
+.user_registration #wrapper,
+.user_registration_complete #wrapper,
+.change_password #wrapper,
+.login_choose_conference #wrapper 
+{
+	width: 829px;
+	margin: 20px auto ;
+	padding: 10px;
+}
+
+.login #wrapper
+{
+	width: 100%;
+}
+	
+.login #content
+{
+	width: 500px;
+	margin: 100px auto ;
+	padding: 10px;
+}
+	
+/* masthead for every page */
+#masthead
+{
+	display: block;
+	font-family: "Book Antiqua";
+	/*"Century Gothic", Century, "Bookman Old Style", */
+	font-size: 180%;
+	color: #696969;
+	font-weight: bold;
+}
+
+.red
+{
+	display: inline;
+	color: #EC0006;
+}
+
+/* more settings for masthead for ulounge.php */
+.ulounge #masthead,
+.user_registration #masthead,
+.user_registration_complete #masthead,
+.change_password #masthead,
+.login_choose_conference #masthead
+{
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 60px;
+}
+	
+#logo,
+#footer {
+	visibility: hidden;
+}
+	
+#separator,
+#extraColumn{
+	visibility: hidden;
+}
+	
+#topbar {
+	background: url(../images/layout/top.gif);
+	background-repeat: no-repeat;
+	width: 829px;
+	height: 65px;
+}
+		
+#leftbar {		
+	background: url(../images/layout/left.gif);	
+	background-repeat: repeat-y;
+	width: 48px;
+	height: 595px;
+	float: left;
+}
+
+#rightbar {
+	background: url(../images/layout/right.gif);
+	background-repeat: no-repeat;
+	width: 55px;
+	height: 595px;
+	float: right;
+}
+
+.ulounge #content {
+	margin-top: 10px;
+	float: left;
+	width: 600px;
+}
+	
+.ulounge #contenttopbar {		
+	background: url(../images/layout/contenttop.gif);	
+	background-repeat: no-repeat;
+	width: 600px;
+	height: 19px;
+	float: left;
+}
+		
+.ulounge #contentleftbar {		
+	background: url(../images/layout/contentleft.gif);	
+	background-repeat: no-repeat;
+	width: 23px;
+	height: 664px;
+	float: left;
+}
+
+#instructions {
+	color: #809098;
+	font-size: 95%;
+	margin-bottom: 25px;
+	padding: 15px;
+	border: 1px dashed #d0d4d6;
+}
+
+#errors {
+	color: #EC0006;
+	text-align: center;
+}
+
+.ulounge #conferenceInfo
+{
+	color: #000000;
+	text-transform: uppercase;
+	border-bottom: 1px dashed #d0d4d6;	
+	background-color: #F5F0EA;
+	/* _height: 1em; */
+	line-height: 30px;
+	height: 30px;
+	width: 100%;
+	text-align: center;
+	margin: 0px;
+}
+
+.ulounge #conferenceTitle
+{
+	font-size: 130%;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.ulounge #conference_search_form,
+.ulounge #fconfform 
+{
+	background: #F5F0EA;
+}
+
+.select_conference #conferenceTitle
+{
+	font-size: 100%;
+	font-weight: normal;
+	margin-left: 0px;
+	line-height: 20px;
+}
+
+.select_conference #conference_search_form,
+.select_conference #sconfform
+{
+	background: #FFFFFF;
+	font-weight: normal;
+	margin-left: 0px;
+	line-height: 10px;
+}
+
+.select_conference #conference_search_form2
+{
+	float: left;
+}
+
+.ulounge #fconfform #cc_submit
+{
+	width: 50px;
+}
+
+.display_users #userSearchInfo,
+.user_info #userSearchInfo
+{
+	margin: 0px;
+	padding: 0px;
+	width: 565px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 25px;
+	color: #000000;
+	text-transform: uppercase;
+	border-bottom: 1px solid #DDDDDD;	
+	background-color: #FFFFFF;
+}
+
+
+.select_conference #conferenceInfo2
+{
+	margin: 0px;
+	padding: 0px;
+	width: 565px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	height: 50px;
+	color: #000000;
+	text-transform: uppercase;
+	border-bottom: 1px solid #DDDDDD;	
+	background-color: #FFFFFF;
+}
+
+.ulounge #conferenceInfo a
+{
+	display: inline;
+	color: #696969;
+	text-decoration: none;
+	outline: none; 
+	overflow: hidden;
+}
+
+.ulounge #conferenceInfo a:focus,
+.ulounge #conferenceInfo a:hover,
+.ulounge #conferenceInfo a:active
+{
+	color: #FFFFFF;
+	background: #FF0000;
+	outline: none; 
+	overflow: hidden;
+}
+
+.select_conference #conferenceInfo a,
+.select_conference #conferenceInfo2 a,
+.display_users #userSearchInfo a,
+.user_info #userSearchInfo a,
+.ulounge_welcome #ulounge_welcome_content a,
+a.inc
+{
+	display: inline;
+	color: #EC0006;
+	text-decoration: none;
+	outline: none; 
+	overflow: hidden;
+}
+
+/*extra attributes*/
+a.inc
+{
+	margin-left: 230px;
+	text-transform: lowercase;
+}
+
+.papers a.inc
+{
+	margin-left: 310px;
+	text-transform: lowercase;
+}
+
+/*extra attributes*/
+.display_users #userSearchInfo a,
+.user_info #userSearchInfo a {
+	text-transform: lowercase;
+}	
+
+
+.select_conference #conferenceInfo a:focus,
+.select_conference #conferenceInfo a:hover,
+.select_conference #conferenceInfo a:active,
+.select_conference #conferenceInfo2 a:focus,
+.select_conference #conferenceInfo2 a:hover,
+.select_conference #conferenceInfo2 a:active,
+.display_users #userSearchInfo a:focus,
+.display_users #userSearchInfo a:hover,
+.display_users #userSearchInfo a:active,
+.user_info #userSearchInfo a:focus,
+.user_info #userSearchInfo a:hover,
+.user_info #userSearchInfo a:active,
+.ulounge_welcome #ulounge_welcome_content a:focus,
+.ulounge_welcome #ulounge_welcome_content a:hover,
+.ulounge_welcome #ulounge_welcome_content a:active,
+a.inc:focus,
+a.inc:hover,
+a.inc:active
+{
+	color: #FFFFFF;
+	background: #FF0000;
+	outline: none; 
+	overflow: hidden;
+}
+
+.ulounge #datetime {
+	margin-bottom: 5px;
+	color: #EC0006;
+	font-size: 115%;
+}
+
+#spacer
+{
+	border: 1px solid  #DDDDDD;
+}
+	
+.ulounge #mainColumn {
+	margin-left: 25px;
+	width: 570px;
+	height: 100%;
+}
+		
+.ulounge iframe,
+.select_conference iframe,
+.display_users iframe
+{
+	width: 100%;
+	height: 100%;
+}
+		
+.user_registration #content,
+.user_registration_complete #content {
+	margin-top: 10px;
+	float: left;
+	width: 600px;
+	margin-left: 70px;
+}
+
+.login_choose_conference #content
+{
+	margin: 0px;
+	margin-top: 10px;
+	float: left;
+	padding: 0px;
+	width: 600px;
+	margin-left: 70px;
+	min-height: 100px;
+}
+
+.change_password #content{
+	margin-top: 10px;
+	float: left;
+	width: 550px;
+	margin-left: 75px;
+}
+
+.user_registration .dataTypeGroup,
+.user_registration_complete .dataTypeGroup,
+.update_user_profile .dataTypeGroup,
+.update_user_profile_complete .dataTypeGroup,
+.change_password .dataTypeGroup,
+.conferences .dataTypeGroup,
+.conference_info .dataTypeGroup,
+.chairmen_assignments .dataTypeGroup,
+.reviewers_assignments .dataTypeGroup,
+.conference_control_panel .dataTypeGroup,
+.chairman_conference_control_panel .dataTypeGroup,
+.user_info .dataTypeGroup,
+.update_conference .dataTypeGroup,
+.announcements .dataTypeGroup,
+.administrator_announcements .dataTypeGroup,
+.file_formats .dataTypeGroup,
+.paper_info .dataTypeGroup,
+.chairman_file_formats .dataTypeGrooup,
+.login_choose_conference .dataTypeGroup,
+.paper_reviews_info .dataTypeGroup
+{
+	font: 120% Georgia, "Times New Roman", Times, serif;
+	color: #204050;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+
+
+	background-color: #f0f4f6;
+    background-image: url(../images/layout/form-background.gif);
+    background-repeat: repeat-x;
+    background-position: 0 0;
+}
+
+.update_conference #update_conference_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	border: 1px dashed #CCB08E;	
+}
+
+.interest_levels #interest_levels_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	min-height: 150px;
+	border: 1px dashed #CCB08E;	
+}
+
+.set_interest_levels #set_interest_levels_content,
+.set_interest_levelsf #set_interest_levelsf_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	min-height: 300px;
+	border: 1px dashed #CCB08E;	
+}
+
+.assigned_papers #assigned_papers_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	min-height: 300px;
+	border: 1px dashed #CCB08E;	
+}
+
+.reviews #reviews_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	min-height: 300px;
+	border: 1px dashed #CCB08E;	
+}
+
+.paper_interest_level #paper_interest_level_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	min-height: 300px;
+	border: 1px dashed #CCB08E;	
+}
+
+.announcements #announcements_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 520px;
+	border: 1px dashed #CCB08E;
+}
+
+.display_announcements #display_announcements_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 570px;
+	border: 1px dashed #CCB08E;
+}
+
+.update_user_profile #update_user_profile_content,
+.update_user_profile_complete #update_user_profile_complete_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	border: 1px dashed #CCB08E;
+}
+
+.reviewers_assignments #reviewers_assignments_content
+{
+	margin: 0px;
+	padding: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	border: 1px dashed #CCB08E;
+}
+
+.select_conference #select_conference_content,
+.display_users #display_users_content,
+.conference_info_again #content {
+	margin: 0px;
+	margin-left: 25px;
+	padding: 0px;
+	width: 565px;
+	min-height: 100px;
+}
+
+.user_info #user_info_content
+{
+	margin: 0px;
+	margin-left: 25px;
+	padding: 0px;
+	width: 565px;
+}
+
+.select_conference #mainColumn
+{
+	margin: 0px;
+	height: 0px;
+	height: 920px;
+	width: 565px;
+	margin-top: 10px;
+	border: 1px dashed #CCB08E;
+}
+
+.display_users #mainColumn
+{
+	margin: 0px;
+	height: 0px;
+	height: 950px;
+	width: 565px;
+	margin-top: 10px;
+	border: 1px dashed #CCB08E;
+}
+
+.user_info #mainColumn
+{
+	padding: 15px;
+	margin: 0px;
+	width: 540px;
+	margin-top: 10px;
+	border: 1px dashed #CCB08E;
+}
+
+.display_users_again #mainColumn,
+.conference_info_again #mainColumn {
+	margin: 0px;
+	width: 565px;
+	margin-top: 10px;
+	border: 1px dashed #CCB08E;
+}
+
+
+.conference_control_panel #conference_control_panel_content,
+.users_list #users_list_content,
+.administrator_announcements #administrator_announcements_content,
+.select_conference_instructions #select_conference_instructions_content
+{
+	padding: 15px;
+}
+
+
+.file_formats #file_formats_content 
+{
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	height: 500px;
+	border: 1px dashed #CCB08E;
+}
+
+.chairman_file_formats #chairman_file_formats_content 
+{
+	margin: 0px;
+	padding: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	border: 1px dashed #CCB08E;
+}
+
+.reviewers_assignments #reviewers_assignments_content
+{
+	margin: 0px;
+	padding: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	border: 1px dashed #CCB08E;
+}
+
+.chairman_conference_control_panel #chairman_conference_control_panel_content 
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	height: 650px;
+	border: 1px dashed #CCB08E;
+}
+
+
+.conference_info #conference_info_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	min-height: 720px;
+	border: 1px dashed #CCB08E;	
+}
+
+.paper_info #paper_info_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	min-height: 100px;
+	border: 1px dashed #CCB08E;
+}
+
+.paper_reviews_info #paper_reviews_info_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	min-height: 100px;
+	border: 1px dashed #CCB08E;
+}
+
+.view_assignments #view_assignments_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	min-height: 100px;
+	border: 1px dashed #CCB08E;
+}
+
+.assign_reviewersf #assign_reviewersf_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	min-height: 100px;
+	border: 1px dashed #CCB08E;
+}
+
+.accept_papers #accept_papers_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	min-width: 700px;
+	min-height: 100px;
+	border: 1px dashed #CCB08E;
+}
+
+.assign_papers #assign_papers_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	min-height: 150px;
+	border: 1px dashed #CCB08E;
+}
+
+.papers_display_options #papers_display_options_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	min-height: 150px;
+	border: 1px dashed #CCB08E;
+}
+
+.reviews_display_options #reviews_display_options_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	min-height: 150px;
+	border: 1px dashed #CCB08E;
+}
+
+.display_papers #display_papers_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	min-height: 150px;
+	border: 1px dashed #CCB08E;
+}
+
+.display_abstracts #display_abstracts_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	min-height: 150px;
+	border: 1px dashed #CCB08E;
+}
+
+.display_reviews #display_reviews_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	min-height: 150px;
+	border: 1px dashed #CCB08E;
+}
+
+.contact_chairmen #contact_chairmen_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	min-height: 150px;
+	border: 1px dashed #CCB08E;
+}
+
+.assign_reviewers #assign_reviewers_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	border: 1px dashed #CCB08E;
+}
+
+#page_title {
+	color: #EC0006;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 150%;
+	margin-bottom: 5px;
+}
+
+#conferenceInfo,
+#conferenceInfo2
+{
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+	
+#conferenceInfo a,
+#conferenceInfo2 a
+{
+	display: inline;
+	color: #EC0006;
+	text-decoration: none;
+	outline: none; 
+	overflow: hidden;
+}
+
+#conferenceInfo a:focus,
+#conferenceInfo a:hover,
+#conferenceInfo a:active,
+#conferenceInfo2 a:focus,
+#conferenceInfo2 a:hover,
+#conferenceInfo2 a:active
+{
+	color: #FFFFFF;
+	background: #FF0000;
+	outline: none; 
+	overflow: hidden;
+}
+
+#conferenceInfo #conference_search_form{
+	float: right;
+}
+
+#conferenceInfo #conferenceTitle{
+	float: left;
+}
+
+#userSearchInfo #userSearchForm {
+	float: right;
+}
+
+#userSearchInfo #userSearchTitle {
+	display: inline;
+	float: left;
+}
+
+#userSearchInfo #advancedSearch {
+	
+	float: right;
+	margin-right: 25px;
+}
+
+#terms {
+	margin-left: 120px;
+}
+
+a.simple {
+	display: inline;
+	text-decoration: none;
+	color: #EC0006;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 105%;
+	outline: none; 
+	overflow: hidden;
+}
+
+a.simple:focus, 
+a.simple:hover, 
+a.simple:active {
+	color: #FFFFFF;
+	background: #FF0000;
+	outline: none; 
+	overflow: hidden;
+}
+
+#skiplink {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	visibility: hidden;
+}
+	
+#skiplink a {
+	display: block;
+	color: #959595;
+	font: 1.1em Arial, sans-serif;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	text-decoration: none;
+}
+
+#skiplink a:focus,  
+#skiplink a:hover {
+	color: #959595;
+	background: url(../images/layout/skip-arrow.gif) 50% 100% no-repeat;
+}
+
+#bottomspacer{
+	margin-top: 100px;
+	margin-bottom: 30px;
+	border-bottom: 4px solid #DDDDDD;
+	color: #959595;
+	text-transform: uppercase;
+	font-size: 150%;
+	text-align: right;
+}
+
+#bottomspacer a {
+	color: #959595;
+	text-decoration: none;
+	font-weight: bold;
+	outline: none; 
+	overflow: hidden;
+}
+
+#bottomspacer a:hover,
+#bottomspacer a:focus,
+#bottomspacer a:active {
+	color: #EC0006;
+	outline: none; 
+	overflow: hidden;
+}
+
+#conferencelist
+{
+	font: 11px Georgia, "Times New Roman", Times, serif;
+  	list-style-type: none;
+	margin-top:0px;
+	width: 520px;
+	height: 80px;
+	overflow: scroll;
+	padding: 1px;
+	border: 1px solid #000000;
+	border-color:#c0c4c6 #e0e4e6 #e0e4e6 #c0c4c6;
+	background: #f8f8f8 url(../images/layout/input-background.gif) repeat-x top left;
+}
+
+#ffextensionlist {
+  	font: 11px Georgia, "Times New Roman", Times, serif;
+  	list-style-type: none;
+	margin-top:0px;
+	width: 100px;
+	height: 260px;
+	overflow: scroll;
+	padding: 1px;
+	border: 1px solid #000000;
+	border-color:#c0c4c6 #e0e4e6 #e0e4e6 #c0c4c6;
+	background: #f8f8f8 url(../images/layout/input-background.gif) repeat-x top left;
+}
+
+#conferencelist li,
+#ffextensionlist li
+ {
+  	display: block;
+	text-align: left;
+	padding-bottom: 4px;
+	line-height: 15px;
+	text-decoration: none;
+	cursor: pointer;
+}
+  
+#conferencelist li:hover,
+#ffextensionlist li:hover {
+  	background-color: #E6E6E6;
+	outline: none; 
+	overflow: hidden;
+}
+
+.conferences #searchform
+{
+	background-color: #f0f4f6;
+    background-image: url(../images/layout/form-background.gif);
+    background-repeat: repeat-x;
+    background-position: 0 0;
+	border-bottom: 1px dashed #d0d4d6;
+	height: 30px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.conferences #cffrm,
+.conferences #enfrm
+{
+	display: inline;
+}
+
+.file_formats #searchform{
+	float: left;
+	width: 210px;
+	height: 300px;
+	border-right: 1px dashed #d0d4d6;
+	font: 120% Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+	color: #204050;
+}
+
+.file_formats #insertform {
+	float: right;
+	font: 120% Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+	color: #204050;
+}
+
+.conferences #insertform,
+.papers #insertform
+{
+	font: 120% Georgia, "Times New Roman", Times, serif;
+	font-weight: bold;
+	color: #204050;
+	margin-top: 10px;
+}
+
+#fileformatextensions {
+	float: left;
+	margin-top: 0px;
+}
+
+#conferencenames
+{
+	margin-top: 0px;
+}
+
+.or {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 120%;
+	text-align: center;
+}
+
+table {
+	padding: 15px;
+	width: 100%;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #809098;
+	font-weight: bold;
+	border: 1px dashed #d0d4d6;
+}
+
+.users_list table {
+	border: 0px;
+	padding: 10px;
+	clear: both;	
+}
+
+table th {
+	background-color: #CCCCCC;
+	color: #696969;
+	text-transform: uppercase;
+}
+
+table th .lname {
+	width: 130px;
+	text-align: center;
+}
+table th .fname {
+	width: 125px;
+	text-align: center;
+}
+table th .email {
+	text-align: center;
+}
+table th .remove,
+table th .view {
+	width: 30px;
+	text-align: center;
+}
+
+table a {
+	display: inline;
+	text-decoration: none;
+	color: #696969;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	outline: none; 
+	overflow: hidden;
+}
+
+table a:focus, 
+table a:hover, 
+table a:active {
+	color: #696969;
+	text-decoration: underline;
+	outline: none; 
+	overflow: hidden;
+}
+
+.odd { 
+	background-color: #FFFFFF; 
+}
+
+.even { 
+	background-color: #F5F0EA; 
+}
+
+.highlight { 
+	background-color: #E6E6E6; 
+}
+
+.users_list #view_options {
+	display: block;
+	color: #809098;
+	font-size: 95%;
+	width: 100%;
+}
+
+.users_list #view_options #previous {
+	float: left;
+	display: block;
+	margin-left: 15px;
+}
+
+.users_list #view_options #next {
+	float: right;
+	display: block;
+	margin-right: 15px;
+}
+
+.users_list #view_options a {
+	color: #809098;
+	text-decoration: none;
+	text-transform: lowercase;
+	outline: none; 
+	overflow: hidden;
+}
+
+.users_list #view_options a:hover,
+.users_list #view_options a:active,
+.users_list #view_options a:focus {
+	text-decoration: underline;
+	outline: none; 
+	overflow: hidden;
+}
+
+.display_announcements #display_announcements_content
+{
+	padding: 0px;
+}
+
+.ulounge_welcome #ulounge_welcome_content
+{
+	margin: 0px;
+	padding: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	width: 570px;
+	border: 1px dashed #CCB08E;
+}
+
+.ulounge_welcome #user_types,
+.display_announcements #user_types
+{
+	color: #959595;
+	text-transform: capitalize;
+	margin-top: 0px;
+	padding: 2px;
+	height: 15px;
+	border-bottom: 1px dashed #959595;
+	background-color: #F5F5F5;
+}
+
+.ulounge_welcome #blah,
+.display_announcements #blah {
+	float: left;
+}
+
+.ulounge_welcome #user_types ul,
+.display_announcements #user_types ul
+{
+	float: right;
+	list-style-type: none;
+}
+
+.ulounge_welcome #user_types li,
+.display_announcements #user_types li 
+{
+	display: inline;
+	margin-left: 10px;
+	text-transform: uppercase;
+	color: #4E4E4E;
+	font-weight: bold;
+}
+
+.display_announcements #announcements
+{
+	padding: 10px 25px 25px 25px;
+}
+
+.ulounge_welcome #announcements
+{
+	padding: 5px 25px 25px 25px;
+}
+
+.ulounge_welcome .announcement,
+.display_announcements .announcement
+{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #959595;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-top: 1px solid #FF0000;
+	padding-top: 10px;
+}
+
+.ulounge_welcome .announcement .refers,
+.display_announcements .announcement .refers
+{
+	color: #4E4E4E;
+	margin-top: 15px;
+	text-align: right;
+}
+
+.ulounge_welcome .announcement .info,
+.display_announcements .announcement .info
+{
+	display: inline;
+}
+
+.ulounge_welcome .announcement .info a,
+.display_announcements .announcement .info a 
+{
+	text-decoration: none;
+	color: #EC0006;
+	text-transform: capitalize;
+	outline: none; 
+	overflow: hidden;
+}
+
+.ulounge_welcome .announcement .info a:hover,
+.ulounge_welcome .announcement .info a:active,
+.ulounge_welcome .announcement .info a:focus,
+.display_announcements .announcement .info a:hover,
+.display_announcements .announcement .info a:active,
+.display_announcements .announcement .info a:focus
+{
+	color: #4E4E4E;
+	outline: none; 
+	overflow: hidden;
+}
+
+.ulounge_welcome .announcement .message,
+.display_announcements .announcement .message
+{	
+	margin-top: 15px;
+}
+
+.announcements .checkboxes,
+.administrator_announcements .checkboxes{
+	float: left;
+	list-style-type: none;
+	margin-bottom: 5px;
+}
+
+.announcements .checkboxes li,
+.administrator_announcements .checkboxes li
+{
+	display: inline;
+	margin-left: 5px;
+	color: #4E4E4E;
+}
+
+.display_announcements .refers .info
+{
+	float: left;
+}
+
+.user_registration #footer 
+{
+	clear: both;
+	visibility: visible;
+	height: 30px;
+}
+
+.ulounge_welcome .options
+{
+	padding: 15px;
+	border: 1px dashed #d0d4d6;
+	margin: 15px 0px 15px 0px;
+	
+}
+
+.ulounge_welcome .options .user_type
+{
+	font-size: 110%;
+	color: #EC0006;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-bottom: 1px #ff0000 solid;
+	margin-bottom: 10px;
+}
+
+.ulounge_welcome .options ul
+{
+	color: #585858;
+	text-align: right;
+	list-style-type: lower-roman;
+	margin: 0 0 0 16px;
+}
+
+td 
+{
+	text-transform: capitalize;
+}
+
+td a
+{
+	text-transform: lowercase;
+}
+
+.conference_info #LargeConferenceName,
+.chairmen_assignments #LargeConferenceName,
+.conference_control_panel #LargeConferenceName,
+.administrator_announcements #LargeConferenceName,
+.chairman_conference_control_panel #LargeConferenceName,
+.paper_info #LargePaperName
+{
+	color: #204050;
+	font: normal bold 115% "lucida sans", serif;
+	width: 500px;
+	margin-bottom: 10px;
+}
+
+#secondaryfr
+{
+	height: 100%;
+	width: 100%;
+}
+
+.chairmen_assignments #chairmen_assignments_content,
+.conference_control_panel #conference_control_panel_content,
+.conferences #conferences_content,
+.administrator_announcements #administrator_announcements_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	min-height: 100px;
+	border: 1px dashed #CCB08E;
+}
+
+#cconferenceInfo,
+#ppaperInfo
+{
+	margin: 0px;
+	padding: 0px;
+	margin-left: 25px;
+	width: 570px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 25px;
+	/* _height: 1em; */
+	color: #000000;
+	text-transform: uppercase;
+	border-bottom: 1px solid #DDDDDD;	
+	background-color: #FFFFFF;
+}
+
+#cconferenceInfo2,
+#ppaperInfo2
+{
+	margin: 0px;
+	padding: 0px;
+	width: 565px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	height: 50px;
+	color: #000000;
+	text-transform: uppercase;
+	border-bottom: 1px solid #DDDDDD;	
+	background-color: #FFFFFF;
+}
+
+#cconferenceTitle,
+#ppaperTitle
+{
+	float: left;
+	font-size: 100%;
+	font-weight: normal;
+	line-height: 25px;
+}
+
+
+#cconference_search_form,
+#ppaper_search_form
+{
+	float: right;
+	display: inline;
+	font-weight: normal;
+	margin-left: 0px;
+}
+
+#cconference_search_form2,
+#ppaper_search_form2
+{
+	float: left;
+}
+
+#cconferenceInfo a,
+#cconferenceInfo2 a,
+#ppaperInfo a,
+#ppaperInfo2 a
+{
+	display: inline;
+	color: #EC0006;
+	text-decoration: none;
+	outline: none; 
+	overflow: hidden;
+}
+
+#cconferenceInfo a:focus,
+#cconferenceInfo a:hover,
+#cconferenceInfo a:active,
+#cconferenceInfo2 a:focus,
+#cconferenceInfo2 a:hover,
+#cconferenceInfo2 a:active,
+#ppaperInfo a:focus,
+#ppaperInfo a:hover,
+#ppaperInfo a:active,
+#ppaperInfo2 a:focus,
+#ppaperInfo2 a:hover,
+#ppaperInfo2 a:active
+{
+	color: #FFFFFF;
+	background: #FF0000;
+	outline: none; 
+	overflow: hidden;
+}
+
+.ulounge #aec
+{
+	margin-top: 0px
+}
+
+.login #aec
+{
+	position: fixed;
+	bottom: 0px;
+	border-top: 1px dashed #D0D4D6;
+	background-color: #F5F0EA;
+	padding: 5px;
+	width: 100%;
+}
+
+.ulounge #aec .conf_list
+{
+	margin-bottom: 10px;
+	margin-left: 1px;
+	padding: 2px;
+}
+
+.ulounge #aec .conf_list .conf_list_title
+{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #EC0006;
+	font-size: 150%;
+	text-transform: capitalize;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.login #aec .conf_list .conf_list_title
+{
+	float: left;
+	display: inline;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #EC0006;
+	font-size: 110%;
+	text-transform: capitalize;
+	margin-right: 10px;
+}
+
+.ulounge #aec .conf_list ul
+{
+	margin-top: 10px;
+	list-style-type: none;
+	border: 1px dotted #DDDDDD;
+	padding: 5px;
+}
+
+.login #aec .conf_list ul
+{
+	list-style-type: none;
+	padding: 1px;
+	margin-bottom: 10px;
+}
+
+.ulounge #aec .conf_list ul a
+{
+	text-transform: capitalize;
+}
+
+.ulounge #aec .conf_list #active li
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.ulounge #aec .conf_list #expired li
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.login #aec .conf_list #active li,
+.login #aec .conf_list #expired li
+{
+	display: inline;
+	text-transform: capitalize;
+	font-style: italic;
+	margin-right: 5px;
+	font-weight: bold;
+	color: #696969;
+	cursor: help;
+}
+
+.login #aec .conf_list #active .A,
+.login #aec .conf_list #expired .A
+{
+	color: #696969;
+}
+
+.login #aec .conf_list #active .B,
+.login #aec .conf_list #expired .B
+{
+	color: #909090;
+}
+
+.days_left 
+{
+	color: #EC0006;
+	font-size: 150%;
+	text-transform: uppercase;
+}
+
+.ulounge #aec #bar
+{
+	border-bottom: 2px solid #CCCCCC;
+	width: 150px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.conflicts #conflicts_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	border: 1px dashed #CCB08E;	
+}
+
+.papers #papers_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	border: 1px dashed #CCB08E;	
+}
+
+.paper_body #paper_body_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	border: 1px dashed #CCB08E;	
+}
+
+.force_interest_levels #force_interest_levels_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	border: 1px dashed #CCB08E
+}
+
+.paper_info #paper_abstract
+{
+	background-color: #FFFFFF;
+	color: #696969;
+	margin-top: 30px;
+	min-height: 400px;
+	padding: 15px;
+	border: 1px dashed #d0d4d6;
+}
+
+.printout
+{
+	margin: 10px;
+}
+
+.printout #printout_content
+{
+	padding: 5px;
+	border: 1px solid #000000;
+}
+
+.printout #printout_content .fld_title
+{
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.printout #printout_content div
+{
+	margin-bottom: 10px;
+}
+
+.printout #printout_content #paper_abstract
+{
+	clear: both;
+}
+
+.printout .print_button
+{
+
+	background: url(../images/layout/print.gif);
+	background-repeat: no-repeat;
+	width: 25px;
+	height: 25px;
+
+	margin-top: 15px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.print_link
+{
+	margin-top: 15px;
+	text-align: center;
+	font-size: 12px;
+}
+
+
+.print_button
+{
+	margin-top: 15px;
+	font-size: 12px;
+	
+	background: url(../images/layout/print.gif);
+	background-repeat: no-repeat;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+}
+
+.printout ul
+{
+	margin-left: 20px;
+}
+
+#callback {
+	text-align: center;
+	text-transform: capitalize;
+	color: #EC0006;
+}
+
+.assign_reviewersf table.papers_and_reviewers,
+.set_interest_levelsf table.interests_and_conflicts
+{
+	background-color: #FFFFFF;
+}
+
+.view_assignments table.papers_and_reviewers td.paper_title,
+.assign_reviewersf table.papers_and_reviewers td.paper_title
+{
+	text-align: left;
+	vertical-align: top;
+}
+.view_assignments table.papers_and_reviewers td.paper_title a,
+.assign_reviewersf table.papers_and_reviewers td.paper_title a
+{
+	text-transform: capitalize;
+}
+.view_assignments table.papers_and_reviewers td.edit_button
+{
+	vertical-align: bottom;
+	text-align: right;
+}
+.view_assignments table.papers_and_reviewers td.reviewers_list ul,
+.assign_reviewersf table.papers_and_reviewers td.reviewers_list ul
+{
+	list-style-type: none;
+}
+.view_assignments table.papers_and_reviewers td.reviewers_list ul li a,
+.assign_reviewersf table.papers_and_reviewers td.reviewers_list ul li a
+{
+	text-transform: capitalize;
+}
+
+.assign_reviewersf table.papers_and_reviewers td.paper_authors
+{
+	vertical-align: top;
+	text-align: left;
+}
+
+.assign_reviewersf table.papers_and_reviewers td.paper_authors ul
+{
+	list-style-type: none;
+}
+
+.assign_reviewersf table.papers_and_reviewers td.paper_authors ul li
+{
+	margin-bottom: 3px;
+}
+
+.assign_reviewersf table.papers_and_reviewers td.reviewers_list
+{
+	width: 300px;
+	text-align:center;
+}
+
+.assign_reviewers table.candidate_reviewers,
+.assign_reviewers table.candidate_reviewers th.checkbox,
+.conflicts table.candidate_reviewers,
+.conflicts table.candidate_reviewers th.checkbox,
+.conflicts table.candidate_reviewers td.checkbox,
+.accept_papers table.acceptpapers
+{
+	background-color: #FFFFFF;
+}
+
+.assign_reviewers table.candidate_reviewers td.reviewer a,
+.conflicts table.candidate_reviewers td.reviewer a
+{
+	text-transform: capitalize;
+}
+
+.assign_reviewers table.candidate_reviewers td.conflict,
+.assign_reviewers table.candidate_reviewers td.conflict_by_author,
+.assign_reviewers table.candidate_reviewers td.level_of_interest
+{
+	text-align: center;
+}
+
+.assign_reviewers table.candidate_reviewers td.level_of_interest
+{
+	color: #EC0006;
+	font-size: 110%;
+}
+.text .red
+{
+	text-transform: capitalize;
+}
+
+.user_registration_complete .text .red,
+.update_user_profile .text .red,
+.update_user_profile_complete  .text .red
+{
+	text-transform: lowercase;
+}
+
+ul.uploaded_papers
+{
+	list-style-type: none;
+	margin: 2px 0 0 50px;
+}
+
+.paper_info ul.uploaded_papers
+{
+	margin: 0px;
+	list-style-type: none;
+}
+
+.force_action
+{
+	margin-top: 15px;
+	padding: 10px;
+	text-align: center;
+	border: 1px dashed #FF0000;
+}
+
+.force_action a
+{
+	font-size: 120%;
+	font-weight: bold;
+	color: #EC0006;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.force_action a:focus,
+.force_action a:hover,
+.force_action a:active
+{
+	color: #FFFFFF;
+	background-color: #FF0000;
+}
+
+.ulounge ul.deadlines
+{
+	list-style-type: none;
+	margin: 2px;
+	color: #585858;
+}
+
+.assign_papers ul.arp_types,
+.interest_levels ul.sil_types,
+.papers_display_options ul.pdo_types,
+.reviews_display_options ul.rdo_types,
+.users_actions_log ul.ual_types
+{
+	list-style-type: none;
+	margin-left: 5px;
+}
+
+.assign_papers ul.arp_types li,
+.interest_levels ul.sil_types li,
+.papers_display_options ul.pdo_types li,
+.reviews_display_options ul.rdo_types li,
+.users_actions_log ul.ual_types li
+{
+	font-size: 125%;
+}
+
+.set_interest_levelsf table.interests_and_conflicts th.interest,
+.set_interest_levelsf table.interests_and_conflicts th.conflict,
+.set_interest_levelsf table.interests_and_conflicts th.authors,
+.set_interest_levelsf table.interests_and_conflicts th.abstract,
+.set_interest_levelsf table.interests_and_conflicts td.interest,
+.set_interest_levelsf table.interests_and_conflicts td.conflict,
+.set_interest_levelsf table.interests_and_conflicts td.abstract
+{
+	text-align:center;
+	width: 80px;
+}
+
+.set_interest_levelsf table.interests_and_conflicts td.authors ul,
+.set_interest_levels table.interests_and_conflicts td.authors ul
+{
+	list-style-type: none;
+}
+
+.set_interest_levelsf table.interests_and_conflicts td.authors ul li,
+.set_interest_levels table.interests_and_conflicts td.authors ul li
+{
+	margin-bottom: 3px;
+}
+
+.set_interest_levelsf table.interests_and_conflicts td.button
+{
+	text-align: right;
+	vertical-align: bottom;
+}
+
+.set_interest_levelsf table.interests_and_conflicts a
+{
+	cursor: pointer;
+}
+
+.set_interest_levelsf table.interests_and_conflicts div.hidden_content
+{
+	display: none;
+	padding: 15px;
+	border: 1px dotted #000000;
+	background-color: #FAF8F5;
+	text-align: right;
+	margin-left: 50px;
+}
+
+.set_interest_levelsf table.interests_and_conflicts div.hidden_content div.a_of_p,
+.set_interest_levelsf table.interests_and_conflicts div.hidden_content div.abst
+{
+	text-align: justify;
+}
+
+.set_interest_levelsf table.interests_and_conflicts div.hidden_content div.a_of_p
+{
+	border-bottom: 1px solid #cccccc;
+	margin-bottom: 10px;
+	text-transform: none;
+}
+
+.printout li
+{
+	text-transform: capitalize;
+}
+
+.conferences div.conf_info_type,
+.update_conference div.conf_info_type
+{
+	font-size: 110%;
+	margin-bottom: 10px;
+	color: #EC0006;
+}
+
+/*
+login_choose_conference
+*/
+.login_choose_conference table.conferences td.enter
+{
+	text-align: center;
+}
+
+.login_choose_conference table.conferences td.deadlines
+{
+	text-align:center;
+	width: 80px;
+}
+.login_choose_conference table.conferences td.deadlines
+{
+	width: 280px;
+	text-align: left;
+}
+.login_choose_conference table.conferences td.deadlines #button
+{
+	text-align: center;
+}
+.login_choose_conference table.conferences a
+{
+	cursor: pointer;
+}
+.login_choose_conference table.conferences div.hidden_content
+{
+	display: none;
+	margin-left: 245px;
+	border: 1px dotted #000000;
+	background-color: #FAF8F5;
+	text-align: left;
+	width: 278px;
+}
+.login_choose_conference table.conferences div.hidden_content ul
+{
+	list-style-type: none;
+}
+
+
+
+/*
+assigned_papers
+*/
+.assigned_papers table.assigned_papers th.review
+{
+	text-align: center;
+	width: 50px;
+}
+.assigned_papers table.assigned_papers th.option,
+.assigned_papers table.assigned_papers td.enter
+{
+	text-align: center;
+	width: 10px;
+}
+.assigned_papers table.assigned_papers td.button
+{
+	text-align: center;
+}
+.assigned_papers table.assigned_papers a
+{
+	cursor: pointer;
+}
+.assigned_papers table.assigned_papers div.hidden_content
+{
+	display: none;
+	padding: 15px;
+	border: 1px dotted #000000;
+	background-color: #FAF8F5;
+	margin-left: 50px;
+}
+.assigned_papers table.assigned_papers div.hidden_content div.paper_title
+{
+	border-bottom: 1px solid #CCCCCC;
+	margin-bottom: 10px;
+	text-transform: none;
+}
+.assigned_papers table.assigned_papers div.hidden_content span.num
+{
+	color: #696969;
+}
+.assigned_papers table.assigned_papers div.hidden_content div.text
+{
+	margin-top: 2px;
+	margin-left: 60px;
+	color: #696969;
+	text-transform: none;
+	font-style: italic;
+}
+.assigned_papers table.assigned_papers div.hidden_content ul
+{
+	list-style-type: none;
+}
+.assigned_papers table.assigned_papers td.name a
+{
+	text-transform: capitalize;
+}
+
+/*
+display_papers
+*/
+.display_papers table.conference_papers td.title,
+.display_papers table.conference_papers th.authors,
+.display_papers table.conference_papers td.download,
+.display_papers table.conference_papers th.abstract
+{
+	text-align: center;
+}
+.display_papers table.conference_papers th.abstract
+{
+	width: 50px;
+	text-align: center;
+}
+.display_papers table.conference_papers td.button
+{
+	text-align: right;
+	vertical-align: bottom;
+}
+.display_papers table.conference_papers a
+{
+	cursor: pointer;
+}
+.display_papers table.conference_papers div.hidden_content
+{
+	display: none;
+	padding: 15px;
+	border: 1px dotted #000000;
+	background-color: #FAF8F5;
+	text-align: right;
+	margin-left: 50px;
+}
+.display_papers table.conference_papers div.hidden_content div.a_of_p,
+.display_papers table.conference_papers div.hidden_content div.abst
+{
+	text-align: justify;
+}
+.display_papers table.conference_papers div.hidden_content div.a_of_p
+{
+	border-bottom: 1px solid #cccccc;
+	margin-bottom: 10px;
+	text-transform: none;
+}
+.display_papers table.conference_papers td.authors ul
+{
+	list-style-type: none;
+}
+.display_papers table.conference_papers td.authors ul li
+{
+	margin-bottom: 3px;
+}
+
+/*
+display_abstracts
+*/
+.display_abstracts table.conference_abstracts td.title,
+.display_abstracts table.conference_abstracts th.authors,
+.display_abstracts table.conference_abstracts th.user,
+.display_abstracts table.conference_abstracts td.download,
+.display_abstracts table.conference_abstracts th.abstract
+{
+	text-align: center;
+}
+
+.display_abstracts table.conference_abstracts th.abstract
+{
+	width: 50px;
+	text-align: center;
+}
+.display_abstracts table.conference_abstracts td.button
+{
+	text-align: right;
+	vertical-align: bottom;
+}
+.display_abstracts table.conference_abstracts a
+{
+	cursor: pointer;
+}
+.display_abstracts table.conference_abstracts div.hidden_content
+{
+	display: none;
+	padding: 15px;
+	border: 1px dotted #000000;
+	background-color: #FAF8F5;
+	text-align: right;
+	margin-left: 50px;
+}
+.display_abstracts table.conference_abstracts div.hidden_content div.a_of_p,
+.display_abstracts table.conference_abstracts div.hidden_content div.abst
+{
+	text-align: justify;
+}
+.display_abstracts table.conference_abstracts div.hidden_content div.a_of_p
+{
+	border-bottom: 1px solid #cccccc;
+	margin-bottom: 10px;
+	text-transform: none;
+}
+.display_abstracts table.conference_abstracts td.authors ul
+{
+	list-style-type: none;
+}
+.display_abstracts table.conference_abstracts ul li
+{
+	margin-bottom: 3px;
+}
+.display_abstracts table.conference_abstracts td.user a
+{
+	text-transform: capitalize;
+}
+
+/*
+display_reviews
+*/
+.display_reviews table.paper_reviews a
+{
+	text-transform: capitalize;
+}
+.display_reviews table.paper_reviews td.reviewers ul
+{
+	list-style-type: none;
+}
+.display_reviews table.paper_reviews td.reviewers ul li
+{
+	margin-bottom: 3px;
+}
+.display_reviews table.paper_reviews th.view
+{
+	width: 25px;
+}
+.display_reviews table.paper_reviews td.view
+{
+	text-align: right;
+	vertical-align: bottom;
+}
+
+/*
+paper_reviews_info
+*/
+.paper_reviews_info legend
+{
+	margin-bottom: 20px;
+}
+.paper_reviews_info .dataTypeGroup div.field
+{
+	font-weight: bold;
+	text-transform: capitalize;
+	margin-bottom: 5px;
+}
+.paper_reviews_info .dataTypeGroup div.field ul
+{
+	list-style-type: none;
+	margin-left: 100px;
+}
+.paper_reviews_info .dataTypeGroup div.field ul li
+{
+	font-weight: lighter;
+}
+.paper_reviews_info .dataTypeGroup span.reviewer
+{
+	font-weight: lighter;
+	text-transform: capitalize;
+	color: #696969;
+}
+.paper_reviews_info table.score
+{
+	padding: 2px;
+	border: 0px;
+	background-color: #FFFFFF;
+}
+.paper_reviews_info table.score th
+{
+	font-size: 90%;
+	text-transform: lowercase;
+}
+.paper_reviews_info table.score th.overall
+{
+	color: #FF0000;
+	background-color: #FFFFFF;
+}
+.paper_reviews_info table.score th.reviewer,
+.paper_reviews_info table.score td.reviewer
+{
+	color: #696969;
+	background-color: #FFFFFF;
+}
+.paper_reviews_info .dataTypeGroup div.field ul.textwrap
+{
+	display: none;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 25px;
+}
+.paper_reviews_info .dataTypeGroup div.field a
+{
+	cursor: pointer;
+	text-transform: lowercase;
+}
+.paper_reviews_info ul.textwrap li
+{
+	margin: 15px;
+}
+.paper_reviews_info ul.textwrap li div.txt
+{
+	background-color: #FFFFFF;
+	min-height: 85px;
+	padding: 5px;
+	color: #809098;
+	border: 1px dashed #d0d4d6;
+}
+
+#chairmen_assignments_content th.remove,
+#reviewers_assignments_content th.remove,
+#conference_info_content th.view,
+#view_assignments_content th.edit,
+#display_papers_content th.view,
+#display_abstracts_content th.abstract,
+#display_reviews_ch_content th.view,
+#chairman_file_formats_content th.remove,
+#users_list_content th.view,
+#set_interest_levels_content th.edit,
+#set_interest_levelsf_content th.abstract,
+#display_reviews_content th.view,
+#contact_chairmen_content th.view
+{
+	padding: 2px;
+	width: 2px;
+}
+
+#chairmen_assignments_content td, 
+#reviewers_assignments_content td, 
+#conference_info_content td,
+#view_assignments_content td,
+#display_papers_content td,
+#display_abstracts_content td,
+#display_reviews_ch_content td,
+#chairman_file_formats_content td,
+#users_list_content td,
+#set_interest_levels_content td,
+#set_interest_levelsf_content td,
+#display_reviews_content td,
+#contact_chairmen_content td
+{
+	padding: 2px;
+}
+
+#file_formats_content #fileformatslist
+{
+	font-size: 90%;
+}
+
+#file_formats_content #update_ff,
+#file_formats_content #insert_new_ff
+{
+	margin: 5px;
+	float: left;
+}
+
+/* hacks for page accept_papers.php */
+.ap #rightbar {	visibility: hidden }
+.ap #spacer { border: 1px solid  #DDDDDD; width: 750px;}
+.ap #bottomspacer { width: 750px;}
+.ap #topbar {}
+
+.ap ul.order_by
+{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 100px;
+}
+.ap ul.order_by li
+{
+	display: inline;
+	margin: 30px;
+}
+
+.ap .accept_papers span.totals
+{
+	font-size:larger;
+	color: #000000;
+}
+
+.black { color: #000000; }
+
+.ap .print_button { margin-left: 365px; }
+
+#rguide
+{
+	color: #809098;
+	font-size: 95%;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding: 15px;
+	border: 1px dashed #d0d4d6;
+}
+
+#rguide ul
+{
+	text-align: justify;
+	list-style-type: none;
+}
+
+pre { font-size: 11px;}
+
+
+/*
+set_interest_levels
+*/
+.set_interest_levels table.interests_and_conflicts td.interest,
+.set_interest_levels table.interests_and_conflicts td.conflict
+{
+	text-align: center;
+}
+
+.set_interest_levels table.interests_and_conflicts th.abstract
+{
+	width: 50px;
+	text-align: center;
+}
+.set_interest_levels table.interests_and_conflicts td.button
+{
+	text-align: center;
+}
+.set_interest_levels table.interests_and_conflicts a
+{
+	cursor: pointer;
+}
+.set_interest_levels table.interests_and_conflicts div.hidden_content
+{
+	display: none;
+	padding: 15px;
+	border: 1px dotted #000000;
+	background-color: #FAF8F5;
+	text-align: right;
+	margin-left: 50px;
+}
+.set_interest_levels table.interests_and_conflicts div.hidden_content div.a_of_p,
+.set_interest_levels table.interests_and_conflicts div.hidden_content div.abst
+{
+	text-align: justify;
+}
+.set_interest_levels table.interests_and_conflicts div.hidden_content div.a_of_p
+{
+	border-bottom: 1px solid #cccccc;
+	margin-bottom: 10px;
+	text-transform: none;
+}
+.set_interest_levels table.interests_and_conflicts td.authors ul
+{
+	list-style-type: none;
+}
+.set_interest_levels table.interests_and_conflicts ul li
+{
+	margin-bottom: 3px;
+}
+
+.ulounge #cs
+{
+	color: #EC0006;
+	font-size: 125%;
+	text-transform: uppercase;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.cookies_notification
+{
+	color: #EC0006;
+	text-transform: uppercase;
+	border-bottom: 1px dashed #d0d4d6;	
+	background-color: #F5F0EA;
+	/* _height: 1em; */
+	line-height: 30px;
+	min-height: 30px;
+	width: 100%;
+	text-align: center;
+	margin: 0px;
+}
+.cookies_notification a
+{
+	color: #EC0006;
+}
+
+.index #wrapper
+{
+	width: 100%;
+}
+	
+.index #content
+{
+	width: 500px;
+	margin: 100px auto ;
+	padding: 10px;
+}
+
+.index ul.desperate_actions,
+.index #js_instructions,
+.index #c_instructions
+{
+	background-color: #f0f4f6;
+    background-image: url(../images/layout/form-background.gif);
+    background-repeat: repeat-x;
+    background-position: 0 0;
+	
+	margin: 0px;
+	padding: 15px;
+	list-style-type: none;
+	min-height: 100px;
+}
+
+.index ul.desperate_actions li,
+.index #js_instructions li,
+.index #c_instructions li
+{
+	margin: 10px;
+}
+
+.index ul.desperate_actions li a
+{
+	display: inline;
+	color: #696969;
+	text-decoration: none;
+	outline: none; 
+	overflow: hidden;
+}
+
+.index ul.desperate_actions li a:focus,
+.index ul.desperate_actions li a:hover,
+.index ul.desperate_actions li a:active
+{
+	border:1px solid #FF0000;
+	color:#FFFFFF;
+	outline-color:invert;
+	outline-style:none;
+	outline-width:medium;
+	overflow:hidden;
+}
+
+.index ul.order_by
+{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+.index ul.order_by li
+{
+	display: inline;
+	margin-right: 15px;
+}
+.index ul.order_by li a
+{
+	color: #696969;
+	text-decoration: none;
+	outline: none; 
+	overflow: hidden;
+}
+.index ul.order_by li a:focus,
+.index ul.order_by li a:hover,
+.index ul.order_by li li a:active
+{
+	border:1px solid #FF0000;
+	color:#FFFFFF;
+	outline-color:invert;
+	outline-style:none;
+	outline-width:medium;
+	overflow:hidden;
+}
+
+.users_actions_log #users_actions_log_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	min-height: 150px;
+	border: 1px dashed #CCB08E;
+}
+
+/* hacks for pages users_actions_log_file.php, users_actions_log_db.php */
+.ual #rightbar { visibility: hidden }
+.ual #spacer { border: 1px solid  #DDDDDD; width: 750px;}
+.ual #bottomspacer { width: 750px;}
+.ual #topbar {}
+.ual #users_actions_log_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	min-width: 725px;
+	min-height: 100px;
+	border: 1px dashed #CCB08E;
+}
+
+.ual #cconferenceInfo
+{
+	width: 725px; 
+}
+
+.users_actions_log table.users_actions th
+{
+	padding: 3px;
+	text-align: center;
+}
+.users_actions_log table.users_actions td
+{
+	text-align: center;
+}
+.users_actions_log table.users_actions td.function
+{
+	text-align: justify;
+}
+.users_actions_log table.users_actions a
+{
+	cursor: pointer;
+}
+.users_actions_log table.users_actions div.hidden_content
+{
+	display: none;
+	padding: 15px;
+	border: 1px dotted #000000;
+	background-color: #FAF8F5;
+	text-align: right;
+	margin-left: 50px;
+}
+.users_actions_log table.users_actions div.hidden_content div.err
+{
+	text-align: justify;
+}
+
+.acceptpapers td.overall
+{ 
+	border: solid 1px #000000;
+}
+
+.conference_info #conference_info_content .comments
+{
+	background-color: #FFFFFF;
+	margin-left: 125px;
+	padding: 15px;
+	border: 1px dashed #d0d4d6;
+	overflow: visible;
+	font-size: 13px;
+}
+
+#help_content
+{
+	margin: 0px;
+	margin-top: 10px;
+	margin-left: 25px;
+	padding: 15px;
+	width: 540px;
+	min-height: 300px;
+	border: 1px dashed #CCB08E;	
+}
+
+.cinnamint { color:#D7141C; }
+.air_born { background-color:#0098E1; color:#000000; }
+.merky_blue { background-color:#B8D1D6; color:#000000; }
+.neutral_blue { background-color:#D8EFF3; color:#000000; }
+.im_so_sorry { background-color:#FBC8CF; color:#000000; }
+.berry_pink { background-color:#EE8C94; color:#000000; }
+
+.strikethrough
+{
+	text-decoration:line-through;
+}
+.focused
+{
+	color: #333333;
+}
+
+.boxes span
+{
+	border: 1px solid #000000;
+	padding-left: 10px;
+	padding-right: 10px;
+}

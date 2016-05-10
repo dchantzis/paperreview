@@ -1,0 +1,45 @@
+@charset "iso-8859-1";
+/* CSS Document */
+/* SLIDERS */
+
+#track,
+#originality_track ,
+#significance_track,
+#quality_track,
+#relevance_track,
+#presentation_track,
+#overall_track
+{ 
+	margin-top: 15px;
+	margin-left: 100px;
+
+	width: 251px; 
+	height: 28px;
+	background: url(../images/slider/track.gif) top left no-repeat;
+}
+
+#handle,
+#originality_handle,
+#significance_handle,
+#quality_handle,
+#relevance_handle,
+#presentation_handle,
+#overall_handle
+{ 
+	width: 34px;
+	height: 70px;
+	cursor: move;
+	position: relative;
+}
+
+#handle #value,
+#originality_handle #originality_value,
+#significance_handle #significance_value,
+#quality_handle #quality_value,
+#relevance_handle #relevance_value,
+#presentation_handle #presentation_value,
+#overall_value
+{
+	text-align: center;
+}
+/**/

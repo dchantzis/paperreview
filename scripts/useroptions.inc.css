@@ -1,0 +1,160 @@
+@charset "iso-8859-1";
+/* CSS Document */
+/*
+##############################################################################
+User Options Cascading Style Sheet
+This css contains all the styling regarding the user options related attributes
+###############################################################################
+*/
+
+.ulounge #user,
+.login_choose_conference #user 
+{
+	position: relative;
+	width: 100%;
+	top: 45px;
+	left: 50px;
+}
+	
+/*
+.login_choose_conference #user 
+{
+	margin-top: 15px;
+	height: 22px;
+	width: 100%;
+	border: 1px dashed #d0d4d6;
+}
+*/
+	
+/* userData for all the pages except ulounge.php */
+#userData {
+	 color: #959595;
+	 text-transform: capitalize;
+	 float: left;
+}
+	
+/* userData for ulounge.php */
+.ulounge #userData, 
+.user_registration_complete #userData,
+.login_choose_conference #userData
+{
+	position: absolute;
+	top: 5px;
+	left: -5px;
+}
+	
+.ulounge #userOptions
+{
+	position: absolute;
+	top: -3px;
+	left: 488px;
+}
+
+.ulounge .userOptionsAdmin
+{
+	left: 612px!important;
+}
+
+.change_password #userOptions
+{
+	position: relative;
+	top: 42px;
+	left: 662px;
+}
+
+
+.user_registration #userOptions
+{
+    position: absolute;
+    top: 72px;
+    left: 568px;
+}
+
+.login_choose_conference #userOptions {
+    position: absolute;
+    top: -3px;
+    left: 612px;
+}
+
+/* hack for page accept_papers.php */
+/*.ap #userOptions { margin-left: 672px;}*/
+/* hacks for pages users_actions_log_file.php, users_actions_log_db.php */
+/*.ual #userOptions { margin-left: 658px;}*/
+
+.login #userOptions {
+	margin-top: 15px;
+}
+
+/*	
+.login_choose_conference #userOptions {
+	float: right;
+}
+*/
+	
+/* userOptions ul for all the pages */
+#userOptions ul {
+	list-style-type: none;
+}
+	
+/* userOptions li a for all the pages */
+#userOptions li a {
+	display: block;
+	background-color: #F5F0EA;
+	color: #C6A782;
+	_height: 1em;
+	margin-right: 5px;
+	text-decoration: none;
+	text-align: center;
+	line-height: 20px; /*vertical alignment of embedded text*/
+	/*float: left;*/
+	width: 122px;
+	height: 20px;
+	border: 1px solid #F5F0EA;
+	outline: none; 
+	overflow: hidden;
+}
+#profilelink
+{
+	display: inline;
+}
+.login #userOptions #register
+{
+	float:left;
+	display: inline;
+}
+.login #userOptions #forgotpassword
+{
+	display: inline;
+}
+/* userOptions li a different width and height for login.php */
+.login #userOptions li a {
+	width: 245px;
+	height: 20px;
+}
+	
+/* userOptions li for all the pages */
+#userOptions li{
+	float: left;
+	margin: 0 -5px 0 0;
+}
+	
+/* userOptions li a focus, hover and active features for all the pages */
+#userOptions li a:focus, 
+#userOptions li a:hover, 
+#userOptions li a:active {
+	color: #FF0000;	
+	border: 1px solid #FF0000;	
+	outline: none; 
+	overflow: hidden;
+}
+	
+/*the following is used for the link "profile" 
+which is not used in the administrator mode, 
+thus doesn't need to exist.*/
+#userOptions #null_link,
+#login_choose_conference #null_link
+{
+	border: 1px solid #FFFFFF;
+	background-color: #FFFFFF;
+	color: #585858;
+}
