@@ -30,7 +30,7 @@ Administrator:
   - **password: -
 
 Chairman:
-  - **username:** *james.doe@doe.com*
+  - **username:** *brian.bendis@writers.com*
   - **password:** *qwaszx*
 
 Reviewer:

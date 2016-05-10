@@ -11,23 +11,24 @@ This css contains all the styling regarding the basic layout of each page
 	margin: 0px;
 	padding: 0px;
 }
-	
+
 /*body for all the pages */
 body {
 	background-color: #FFFFFF;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 70%;
 }
-	
+
 /* wrapper for ulounge.php */
 .ulounge #wrapper,
 .user_registration #wrapper,
 .user_registration_complete #wrapper,
 .change_password #wrapper,
-.login_choose_conference #wrapper 
+.login_choose_conference #wrapper
 {
+	position: relative;
 	width: 829px;
-	margin: 20px auto ;
+	margin: 20px auto;
 	padding: 10px;
 }
 
@@ -35,14 +36,14 @@ body {
 {
 	width: 100%;
 }
-	
+
 .login #content
 {
 	width: 500px;
 	margin: 100px auto ;
 	padding: 10px;
 }
-	
+
 /* masthead for every page */
 #masthead
 {
@@ -71,26 +72,26 @@ body {
 	margin-top: 15px;
 	margin-left: 60px;
 }
-	
+
 #logo,
 #footer {
 	visibility: hidden;
 }
-	
+
 #separator,
 #extraColumn{
 	visibility: hidden;
 }
-	
+
 #topbar {
 	background: url(../images/layout/top.gif);
 	background-repeat: no-repeat;
 	width: 829px;
 	height: 65px;
 }
-		
-#leftbar {		
-	background: url(../images/layout/left.gif);	
+
+#leftbar {
+	background: url(../images/layout/left.gif);
 	background-repeat: repeat-y;
 	width: 48px;
 	height: 595px;
@@ -110,17 +111,17 @@ body {
 	float: left;
 	width: 600px;
 }
-	
-.ulounge #contenttopbar {		
-	background: url(../images/layout/contenttop.gif);	
+
+.ulounge #contenttopbar {
+	background: url(../images/layout/contenttop.gif);
 	background-repeat: no-repeat;
 	width: 600px;
 	height: 19px;
 	float: left;
 }
-		
-.ulounge #contentleftbar {		
-	background: url(../images/layout/contentleft.gif);	
+
+.ulounge #contentleftbar {
+	background: url(../images/layout/contentleft.gif);
 	background-repeat: no-repeat;
 	width: 23px;
 	height: 664px;
@@ -144,7 +145,7 @@ body {
 {
 	color: #000000;
 	text-transform: uppercase;
-	border-bottom: 1px dashed #d0d4d6;	
+	border-bottom: 1px dashed #d0d4d6;
 	background-color: #F5F0EA;
 	/* _height: 1em; */
 	line-height: 30px;
@@ -162,7 +163,7 @@ body {
 }
 
 .ulounge #conference_search_form,
-.ulounge #fconfform 
+.ulounge #fconfform
 {
 	background: #F5F0EA;
 }
@@ -205,7 +206,7 @@ body {
 	height: 25px;
 	color: #000000;
 	text-transform: uppercase;
-	border-bottom: 1px solid #DDDDDD;	
+	border-bottom: 1px solid #DDDDDD;
 	background-color: #FFFFFF;
 }
 
@@ -220,7 +221,7 @@ body {
 	height: 50px;
 	color: #000000;
 	text-transform: uppercase;
-	border-bottom: 1px solid #DDDDDD;	
+	border-bottom: 1px solid #DDDDDD;
 	background-color: #FFFFFF;
 }
 
@@ -229,7 +230,7 @@ body {
 	display: inline;
 	color: #696969;
 	text-decoration: none;
-	outline: none; 
+	outline: none;
 	overflow: hidden;
 }
 
@@ -239,7 +240,7 @@ body {
 {
 	color: #FFFFFF;
 	background: #FF0000;
-	outline: none; 
+	outline: none;
 	overflow: hidden;
 }
 
@@ -253,7 +254,7 @@ a.inc
 	display: inline;
 	color: #EC0006;
 	text-decoration: none;
-	outline: none; 
+	outline: none;
 	overflow: hidden;
 }
 
@@ -274,7 +275,7 @@ a.inc
 .display_users #userSearchInfo a,
 .user_info #userSearchInfo a {
 	text-transform: lowercase;
-}	
+}
 
 
 .select_conference #conferenceInfo a:focus,
@@ -298,7 +299,7 @@ a.inc:active
 {
 	color: #FFFFFF;
 	background: #FF0000;
-	outline: none; 
+	outline: none;
 	overflow: hidden;
 }
 
@@ -312,13 +313,13 @@ a.inc:active
 {
 	border: 1px solid  #DDDDDD;
 }
-	
+
 .ulounge #mainColumn {
 	margin-left: 25px;
 	width: 570px;
 	height: 100%;
 }
-		
+
 .ulounge iframe,
 .select_conference iframe,
 .display_users iframe
@@ -326,7 +327,7 @@ a.inc:active
 	width: 100%;
 	height: 100%;
 }
-		
+
 .user_registration #content,
 .user_registration_complete #content {
 	margin-top: 10px;
@@ -395,7 +396,7 @@ a.inc:active
 	margin-left: 25px;
 	padding: 15px;
 	width: 540px;
-	border: 1px dashed #CCB08E;	
+	border: 1px dashed #CCB08E;
 }
 
 .interest_levels #interest_levels_content
@@ -406,7 +407,7 @@ a.inc:active
 	padding: 15px;
 	width: 540px;
 	min-height: 150px;
-	border: 1px dashed #CCB08E;	
+	border: 1px dashed #CCB08E;
 }
 
 .set_interest_levels #set_interest_levels_content,
@@ -418,7 +419,7 @@ a.inc:active
 	padding: 15px;
 	width: 540px;
 	min-height: 300px;
-	border: 1px dashed #CCB08E;	
+	border: 1px dashed #CCB08E;
 }
 
 .assigned_papers #assigned_papers_content
@@ -429,7 +430,7 @@ a.inc:active
 	padding: 15px;
 	width: 540px;
 	min-height: 300px;
-	border: 1px dashed #CCB08E;	
+	border: 1px dashed #CCB08E;
 }
 
 .reviews #reviews_content
@@ -440,7 +441,7 @@ a.inc:active
 	padding: 15px;
 	width: 540px;
 	min-height: 300px;
-	border: 1px dashed #CCB08E;	
+	border: 1px dashed #CCB08E;
 }
 
 .paper_interest_level #paper_interest_level_content
@@ -451,7 +452,7 @@ a.inc:active
 	padding: 15px;
 	width: 540px;
 	min-height: 300px;
-	border: 1px dashed #CCB08E;	
+	border: 1px dashed #CCB08E;
 }
 
 .announcements #announcements_content
@@ -561,7 +562,7 @@ a.inc:active
 }
 
 
-.file_formats #file_formats_content 
+.file_formats #file_formats_content
 {
 	margin-top: 10px;
 	margin-left: 25px;
@@ -571,7 +572,7 @@ a.inc:active
 	border: 1px dashed #CCB08E;
 }
 
-.chairman_file_formats #chairman_file_formats_content 
+.chairman_file_formats #chairman_file_formats_content
 {
 	margin: 0px;
 	padding: 0px;
@@ -593,7 +594,7 @@ a.inc:active
 	border: 1px dashed #CCB08E;
 }
 
-.chairman_conference_control_panel #chairman_conference_control_panel_content 
+.chairman_conference_control_panel #chairman_conference_control_panel_content
 {
 	margin: 0px;
 	margin-top: 10px;
@@ -612,7 +613,7 @@ a.inc:active
 	padding: 15px;
 	width: 540px;
 	min-height: 720px;
-	border: 1px dashed #CCB08E;	
+	border: 1px dashed #CCB08E;
 }
 
 .paper_info #paper_info_content
@@ -771,14 +772,14 @@ a.inc:active
 	margin-top: 5px;
 	margin-bottom: 10px;
 }
-	
+
 #conferenceInfo a,
 #conferenceInfo2 a
 {
 	display: inline;
 	color: #EC0006;
 	text-decoration: none;
-	outline: none; 
+	outline: none;
 	overflow: hidden;
 }
 
@@ -791,7 +792,7 @@ a.inc:active
 {
 	color: #FFFFFF;
 	background: #FF0000;
-	outline: none; 
+	outline: none;
 	overflow: hidden;
 }
 
@@ -813,7 +814,7 @@ a.inc:active
 }
 
 #userSearchInfo #advancedSearch {
-	
+
 	float: right;
 	margin-right: 25px;
 }
@@ -828,16 +829,16 @@ a.simple {
 	color: #EC0006;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: 105%;
-	outline: none; 
+	outline: none;
 	overflow: hidden;
 }
 
-a.simple:focus, 
-a.simple:hover, 
+a.simple:focus,
+a.simple:hover,
 a.simple:active {
 	color: #FFFFFF;
 	background: #FF0000;
-	outline: none; 
+	outline: none;
 	overflow: hidden;
 }
 
@@ -849,7 +850,7 @@ a.simple:active {
 	text-align: center;
 	visibility: hidden;
 }
-	
+
 #skiplink a {
 	display: block;
 	color: #959595;
@@ -859,7 +860,7 @@ a.simple:active {
 	text-decoration: none;
 }
 
-#skiplink a:focus,  
+#skiplink a:focus,
 #skiplink a:hover {
 	color: #959595;
 	background: url(../images/layout/skip-arrow.gif) 50% 100% no-repeat;
@@ -879,7 +880,7 @@ a.simple:active {
 	color: #959595;
 	text-decoration: none;
 	font-weight: bold;
-	outline: none; 
+	outline: none;
 	overflow: hidden;
 }
 
@@ -887,7 +888,7 @@ a.simple:active {
 #bottomspacer a:focus,
 #bottomspacer a:active {
 	color: #EC0006;
-	outline: none; 
+	outline: none;
 	overflow: hidden;
 }
 
@@ -928,11 +929,11 @@ a.simple:active {
 	text-decoration: none;
 	cursor: pointer;
 }
-  
+
 #conferencelist li:hover,
 #ffextensionlist li:hover {
   	background-color: #E6E6E6;
-	outline: none; 
+	outline: none;
 	overflow: hidden;
 }
 
@@ -1009,7 +1010,7 @@ table {
 .users_list table {
 	border: 0px;
 	padding: 10px;
-	clear: both;	
+	clear: both;
 }
 
 table th {
@@ -1040,29 +1041,29 @@ table a {
 	text-decoration: none;
 	color: #696969;
 	font-family: Georgia, "Times New Roman", Times, serif;
-	outline: none; 
+	outline: none;
 	overflow: hidden;
 }
 
-table a:focus, 
-table a:hover, 
+table a:focus,
+table a:hover,
 table a:active {
 	color: #696969;
 	text-decoration: underline;
-	outline: none; 
+	outline: none;
 	overflow: hidden;
 }
 
-.odd { 
-	background-color: #FFFFFF; 
+.odd {
+	background-color: #FFFFFF;
 }
 
-.even { 
-	background-color: #F5F0EA; 
+.even {
+	background-color: #F5F0EA;
 }
 
-.highlight { 
-	background-color: #E6E6E6; 
+.highlight {
+	background-color: #E6E6E6;
 }
 
 .users_list #view_options {
@@ -1088,7 +1089,7 @@ table a:active {
 	color: #809098;
 	text-decoration: none;
 	text-transform: lowercase;
-	outline: none; 
+	outline: none;
 	overflow: hidden;
 }
 
@@ -1096,7 +1097,7 @@ table a:active {
 .users_list #view_options a:active,
 .users_list #view_options a:focus {
 	text-decoration: underline;
-	outline: none; 
+	outline: none;
 	overflow: hidden;
 }
 
@@ -1140,7 +1141,7 @@ table a:active {
 }
 
 .ulounge_welcome #user_types li,
-.display_announcements #user_types li 
+.display_announcements #user_types li
 {
 	display: inline;
 	margin-left: 10px;
@@ -1185,12 +1186,12 @@ table a:active {
 }
 
 .ulounge_welcome .announcement .info a,
-.display_announcements .announcement .info a 
+.display_announcements .announcement .info a
 {
 	text-decoration: none;
 	color: #EC0006;
 	text-transform: capitalize;
-	outline: none; 
+	outline: none;
 	overflow: hidden;
 }
 
@@ -1202,13 +1203,13 @@ table a:active {
 .display_announcements .announcement .info a:focus
 {
 	color: #4E4E4E;
-	outline: none; 
+	outline: none;
 	overflow: hidden;
 }
 
 .ulounge_welcome .announcement .message,
 .display_announcements .announcement .message
-{	
+{
 	margin-top: 15px;
 }
 
@@ -1232,7 +1233,7 @@ table a:active {
 	float: left;
 }
 
-.user_registration #footer 
+.user_registration #footer
 {
 	clear: both;
 	visibility: visible;
@@ -1244,7 +1245,7 @@ table a:active {
 	padding: 15px;
 	border: 1px dashed #d0d4d6;
 	margin: 15px 0px 15px 0px;
-	
+
 }
 
 .ulounge_welcome .options .user_type
@@ -1265,7 +1266,7 @@ table a:active {
 	margin: 0 0 0 16px;
 }
 
-td 
+td
 {
 	text-transform: capitalize;
 }
@@ -1321,7 +1322,7 @@ td a
 	/* _height: 1em; */
 	color: #000000;
 	text-transform: uppercase;
-	border-bottom: 1px solid #DDDDDD;	
+	border-bottom: 1px solid #DDDDDD;
 	background-color: #FFFFFF;
 }
 
@@ -1336,7 +1337,7 @@ td a
 	height: 50px;
 	color: #000000;
 	text-transform: uppercase;
-	border-bottom: 1px solid #DDDDDD;	
+	border-bottom: 1px solid #DDDDDD;
 	background-color: #FFFFFF;
 }
 
@@ -1373,7 +1374,7 @@ td a
 	display: inline;
 	color: #EC0006;
 	text-decoration: none;
-	outline: none; 
+	outline: none;
 	overflow: hidden;
 }
 
@@ -1392,7 +1393,7 @@ td a
 {
 	color: #FFFFFF;
 	background: #FF0000;
-	outline: none; 
+	outline: none;
 	overflow: hidden;
 }
 
@@ -1494,7 +1495,7 @@ td a
 	color: #909090;
 }
 
-.days_left 
+.days_left
 {
 	color: #EC0006;
 	font-size: 150%;
@@ -1516,7 +1517,7 @@ td a
 	margin-left: 25px;
 	padding: 15px;
 	width: 540px;
-	border: 1px dashed #CCB08E;	
+	border: 1px dashed #CCB08E;
 }
 
 .papers #papers_content
@@ -1526,7 +1527,7 @@ td a
 	margin-left: 25px;
 	padding: 15px;
 	width: 540px;
-	border: 1px dashed #CCB08E;	
+	border: 1px dashed #CCB08E;
 }
 
 .paper_body #paper_body_content
@@ -1536,7 +1537,7 @@ td a
 	margin-left: 25px;
 	padding: 15px;
 	width: 540px;
-	border: 1px dashed #CCB08E;	
+	border: 1px dashed #CCB08E;
 }
 
 .force_interest_levels #force_interest_levels_content
@@ -1611,7 +1612,7 @@ td a
 {
 	margin-top: 15px;
 	font-size: 12px;
-	
+
 	background: url(../images/layout/print.gif);
 	background-repeat: no-repeat;
 	width: 25px;
@@ -2191,8 +2192,8 @@ paper_reviews_info
 	width: 2px;
 }
 
-#chairmen_assignments_content td, 
-#reviewers_assignments_content td, 
+#chairmen_assignments_content td,
+#reviewers_assignments_content td,
 #conference_info_content td,
 #view_assignments_content td,
 #display_papers_content td,
@@ -2334,7 +2335,7 @@ set_interest_levels
 {
 	color: #EC0006;
 	text-transform: uppercase;
-	border-bottom: 1px dashed #d0d4d6;	
+	border-bottom: 1px dashed #d0d4d6;
 	background-color: #F5F0EA;
 	/* _height: 1em; */
 	line-height: 30px;
@@ -2352,7 +2353,7 @@ set_interest_levels
 {
 	width: 100%;
 }
-	
+
 .index #content
 {
 	width: 500px;
@@ -2368,7 +2369,7 @@ set_interest_levels
     background-image: url(../images/layout/form-background.gif);
     background-repeat: repeat-x;
     background-position: 0 0;
-	
+
 	margin: 0px;
 	padding: 15px;
 	list-style-type: none;
@@ -2387,7 +2388,7 @@ set_interest_levels
 	display: inline;
 	color: #696969;
 	text-decoration: none;
-	outline: none; 
+	outline: none;
 	overflow: hidden;
 }
 
@@ -2421,7 +2422,7 @@ set_interest_levels
 {
 	color: #696969;
 	text-decoration: none;
-	outline: none; 
+	outline: none;
 	overflow: hidden;
 }
 .index ul.order_by li a:focus,
@@ -2465,7 +2466,7 @@ set_interest_levels
 
 .ual #cconferenceInfo
 {
-	width: 725px; 
+	width: 725px;
 }
 
 .users_actions_log table.users_actions th
@@ -2500,7 +2501,7 @@ set_interest_levels
 }
 
 .acceptpapers td.overall
-{ 
+{
 	border: solid 1px #000000;
 }
 
@@ -2522,7 +2523,7 @@ set_interest_levels
 	padding: 15px;
 	width: 540px;
 	min-height: 300px;
-	border: 1px dashed #CCB08E;	
+	border: 1px dashed #CCB08E;
 }
 
 .cinnamint { color:#D7141C; }

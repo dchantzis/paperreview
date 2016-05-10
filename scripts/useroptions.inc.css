@@ -8,16 +8,16 @@ This css contains all the styling regarding the user options related attributes
 */
 
 .ulounge #user,
-.login_choose_conference #user 
+.login_choose_conference #user
 {
 	position: relative;
 	width: 100%;
 	top: 45px;
 	left: 50px;
 }
-	
+
 /*
-.login_choose_conference #user 
+.login_choose_conference #user
 {
 	margin-top: 15px;
 	height: 22px;
@@ -25,16 +25,16 @@ This css contains all the styling regarding the user options related attributes
 	border: 1px dashed #d0d4d6;
 }
 */
-	
+
 /* userData for all the pages except ulounge.php */
 #userData {
 	 color: #959595;
 	 text-transform: capitalize;
 	 float: left;
 }
-	
+
 /* userData for ulounge.php */
-.ulounge #userData, 
+.ulounge #userData,
 .user_registration_complete #userData,
 .login_choose_conference #userData
 {
@@ -42,7 +42,7 @@ This css contains all the styling regarding the user options related attributes
 	top: 5px;
 	left: -5px;
 }
-	
+
 .ulounge #userOptions
 {
 	position: absolute;
@@ -66,8 +66,8 @@ This css contains all the styling regarding the user options related attributes
 .user_registration #userOptions
 {
     position: absolute;
-    top: 72px;
-    left: 568px;
+    top: 52px;
+    left: 548px;
 }
 
 .login_choose_conference #userOptions {
@@ -85,17 +85,17 @@ This css contains all the styling regarding the user options related attributes
 	margin-top: 15px;
 }
 
-/*	
+/*
 .login_choose_conference #userOptions {
 	float: right;
 }
 */
-	
+
 /* userOptions ul for all the pages */
 #userOptions ul {
 	list-style-type: none;
 }
-	
+
 /* userOptions li a for all the pages */
 #userOptions li a {
 	display: block;
@@ -110,7 +110,7 @@ This css contains all the styling regarding the user options related attributes
 	width: 122px;
 	height: 20px;
 	border: 1px solid #F5F0EA;
-	outline: none; 
+	outline: none;
 	overflow: hidden;
 }
 #profilelink
@@ -131,25 +131,25 @@ This css contains all the styling regarding the user options related attributes
 	width: 245px;
 	height: 20px;
 }
-	
+
 /* userOptions li for all the pages */
 #userOptions li{
 	float: left;
 	margin: 0 -5px 0 0;
 }
-	
+
 /* userOptions li a focus, hover and active features for all the pages */
-#userOptions li a:focus, 
-#userOptions li a:hover, 
+#userOptions li a:focus,
+#userOptions li a:hover,
 #userOptions li a:active {
-	color: #FF0000;	
-	border: 1px solid #FF0000;	
-	outline: none; 
+	color: #FF0000;
+	border: 1px solid #FF0000;
+	outline: none;
 	overflow: hidden;
 }
-	
-/*the following is used for the link "profile" 
-which is not used in the administrator mode, 
+
+/*the following is used for the link "profile"
+which is not used in the administrator mode,
 thus doesn't need to exist.*/
 #userOptions #null_link,
 #login_choose_conference #null_link
