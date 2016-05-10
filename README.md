@@ -7,8 +7,11 @@
 **Git Repo:** [https://github.com/dchantzis/paperreview](https://github.com/dchantzis/paperreview)
 
 **Dissertation paper (Greek):** [http://paperreview.nfshost.com/files/paperreview_greek.pdf](http://paperreview.nfshost.com/files/paperreview_greek.pdf)
+
 **Abstract (English):** [http://paperreview.nfshost.com/files/paperreview_abstract_english.pdf](http://paperreview.nfshost.com/files/paperreview_abstract_english.pdf)
+
 **Presentation (Greek):** [http://paperreview.nfshost.com/files/paperreview_presentation_greek.pdf](http://paperreview.nfshost.com/files/paperreview_presentation_greek.pdf)
+
 
 This is my dissertation project for the BSc(Hons) in Informatics Engineering at the Department of Information Technology, Thessaloniki, Greece.
 
@@ -22,7 +25,7 @@ The system also includes an action log where all users actions are recorded.
 
 For more information and credentials for a testing account, please read the [abstract](http://paperreview.nfshost.com/files/paperreview_abstract_english.pdf).
 
-*Note: All the project documents are in Greek, except the Abstract.*
+**Note: All the project documents are written in Greek, except for the Abstract.**
 
 ### Technologies and tools used:
 
