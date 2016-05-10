@@ -71,7 +71,7 @@ Author:
 
 ![Image 5](http://paperreview.nfshost.com/files/screenshots/screenshot-5.png)
 
-![Image 6](http://paperreview.nfshost.com/files/screenshots/screenshot-3.png)
+![Image 6](http://paperreview.nfshost.com/files/screenshots/screenshot-6.png)
 
 ![Image 7](http://paperreview.nfshost.com/files/screenshots/screenshot-7.png)
 
