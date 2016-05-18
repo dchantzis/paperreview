@@ -1,7 +1,7 @@
 # README
 
-## Dissertation for BSc in Informatics Engineering
-**Built date:** Early 2009
+## Dissertation for BSc in Computer Sciences
+**Built date:** Late 2007
 
 **Website URL:** [http://paperreview.nfshost.com](http://paperreview.nfshost.com)
 **Git Repo:** [https://github.com/dchantzis/paperreview](https://github.com/dchantzis/paperreview)
@@ -53,8 +53,6 @@ Author:
 - prototype
 - UML
 - Adobe Photoshop
-
-### Created: Late 2007
 
 **Dimitrios Chantzis**
 - [dimitrioschantzis.com](http://www.dimitrioschantzis.com)
